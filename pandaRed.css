@@ -1,0 +1,227 @@
+html, body {
+    width:100%;
+    height: 100%;
+    min-width: 1000px;
+}
+
+@font-face {
+    font-family: "AppleSDGothicNeoB00";
+    src: url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.eot");
+    src: url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.svg#AppleSDGothicNeoB00")format("svg");
+}
+
+@font-face {
+    font-family: "AppleSDGothicNeoH";
+    src: url("https://db.onlinewebfonts.com/t/868657654af992968ba24ec0c50b8482.eot");
+    src: url("https://db.onlinewebfonts.com/t/868657654af992968ba24ec0c50b8482.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/868657654af992968ba24ec0c50b8482.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/868657654af992968ba24ec0c50b8482.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/868657654af992968ba24ec0c50b8482.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/868657654af992968ba24ec0c50b8482.svg#AppleSDGothicNeoH")format("svg");
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.wrapper .menubar {
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .menubar .logoImg {
+    width: 120px;
+    margin: 10px;
+
+}
+
+.wrapper .menubar .menu {
+    margin: 10px;
+}
+
+.wrapper .menubar .menu table td {
+    text-align: center;
+    padding: 0px 25px;
+}
+
+.wrapper .menubar .menu table a {
+    color:rgb(255, 255, 255);
+    text-decoration-line: none;
+}
+
+.wrapper .menu table a:hover,
+.wrapper .menu table a.active {
+    color: rgb(255, 255, 0);
+}
+
+.wrapper .block {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    position : relative;
+}
+
+.wrapper .block .pageName {
+    font-size: 60px;
+    margin-top: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Jua', sans-serif;
+}
+
+.wrapper .block .box {
+    width: 400px;
+    height: 40px;
+    position: absolute;
+	bottom: 0px;
+}
+
+.wrapper .block .box td {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100px;
+}
+
+.wrapper .block .box .active {
+    background-color: rgb(255, 255, 255);
+}
+
+.wrapper .block .box .active a {
+    text-decoration: none;
+    font-family: 'Jua', sans-serif;
+    color: black;
+}
+
+.wrapper .block .box a {
+    text-decoration: none;
+    font-family: 'Jua', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.wrapper .block .box a:hover {
+    text-decoration: none;
+    font-family: 'Jua', sans-serif;
+    color: rgb(218, 218, 0);
+}
+
+.wrapper .container {
+    /*가운데 배치 해주는 css*/
+    display: flex;
+    /*세로로 배치*/
+    flex-direction: column;
+    /*좌우 기준으로 가운데 배치*/
+    justify-content: center;
+    /*위아래 기준으로 가운데 배치*/
+    align-items: center;
+    width: 1000px;
+}
+
+.wrapper .container .jump {
+    margin: 50px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.wrapper .container .jump a {
+    color: rgb(107, 107, 107);
+    text-decoration: none;
+    font-family: 'Jua', sans-serif;
+}
+
+.wrapper .container .jump :hover {
+    color: rgb(0, 0, 0);
+}
+
+.wrapper .container .contents .content1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.wrapper .container .contents .content1 .name {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Jua', sans-serif;
+}
+
+.wrapper .container .contents .content1 .char {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.wrapper .container .contents .content1 .resi {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    width:1000px;
+}
+
+.wrapper .container .contents .content1 .resi img {
+    width: 400px;
+    margin-right: 50px;
+}
+
+.wrapper .container .contents .content1 .rea {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    width:1000px;
+}
+
+.wrapper .container .contents .content1 .rea img {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.wrapper .container .contents .content1 .remon {
+    display: flex;
+    align-items: center;
+    padding: 100px 0 150px 0;
+    width:1000px;
+}
+
+.wrapper .container .contents .content1 .remon img {
+    width: 400px;
+    margin-right: 50px;
+}
+
+.wrapper footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper footer .footerContainer {
+    width: 950px;
+}
+
+.wrapper .arrow {
+    position: fixed;
+    right: 17px;
+    bottom: 17px;
+    height: 47px;
+    width: 43px;
+    background-color: rgb(69, 192, 114);
+    border: 2px;
+    border-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 47px;
+}

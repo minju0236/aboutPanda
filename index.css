@@ -1,0 +1,196 @@
+html, body {
+    width:100%;
+    height: 100%;
+    min-width: 1000px;
+}
+
+@font-face {
+    font-family: "AppleSDGothicNeoB00";
+    src: url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.eot");
+    src: url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/70710ba3196618b630b4a1e532809b1d.svg#AppleSDGothicNeoB00")format("svg");
+}
+
+@font-face {
+    font-family: "AppleSDGothicNeoH";
+    src: url("https://db.onlinewebfonts.com/t/868657654af992968ba24ec0c50b8482.eot");
+    src: url("https://db.onlinewebfonts.com/t/868657654af992968ba24ec0c50b8482.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/868657654af992968ba24ec0c50b8482.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/868657654af992968ba24ec0c50b8482.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/868657654af992968ba24ec0c50b8482.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/868657654af992968ba24ec0c50b8482.svg#AppleSDGothicNeoH")format("svg");
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.wrapper .menubar {
+    background-color:  rgb(0, 0, 0);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .menubar .logoImg {
+    width: 120px;
+    margin: 10px;
+}
+
+.wrapper .menu {
+    margin: 10px;
+}
+
+.wrapper .menubar .menu table td {
+    text-align: center;
+    padding: 0px 25px;
+}
+
+.wrapper .menu table a {
+    color:rgb(255, 255, 255);
+    text-decoration-line: none;
+}
+
+.wrapper .menu table a:hover {
+    color:rgb(255, 255, 0);
+}
+
+.wrapper .mainImg {
+    /*background-color: rgb(53, 168, 95);*/
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(43, 135, 76));
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .mainPanda {
+    width: 1000px;
+    height: 550px;
+}
+
+.wrapper .container {
+    /*가운데 배치 해주는 css*/
+    display: flex;
+    /*세로로 배치*/
+    flex-direction: column;
+    /*좌우 기준으로 가운데 배치*/
+    justify-content: center;
+    /*위아래 기준으로 가운데 배치*/
+    align-items: center;
+    width: 1000px;
+}
+
+.wrapper .container .contents .content1 {
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.wrapper .container .contents .content2 {
+    margin: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container .contents .content2 .foundation {
+    font-size: 40px;
+    margin-bottom: 10px;
+    width: 800px;
+    justify-content: center;
+    font-family: 'Jua', sans-serif;
+}
+
+.wrapper .container .contents .content2 .foundationContent {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+
+.wrapper .container .contents .content2 .foundationContent .foundationImg {
+    width: 300px;
+    border-radius: 30px;
+}
+
+.wrapper .container .contents .content2 .foundationContent .foundationText {
+    margin: 30px;
+    width: 500px;
+    line-height: 40px
+}
+
+.wrapper .container .contents .content3 {
+    margin: 100px 0px 150px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper .container .contents .content3 .promise {
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Jua', sans-serif;
+}
+
+.wrapper .container .contents .content3 .promiseContent {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .container .contents .content3 .promiseContent .promiseContent_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.wrapper .container .contents .content3 .promiseContent .promiseContent_1 i {
+    font-size: 60px;
+}
+
+.wrapper .container .contents .content3 .promiseContent .promiseContent_2 {
+    width: 200px;
+    margin: 20px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.wrapper footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper footer .footerContainer {
+    width: 950px;
+}
+
+.wrapper .arrow {
+    position: fixed;
+    right: 17px;
+    bottom: 17px;
+    height: 47px;
+    width: 43px;
+    background-color: rgb(69, 192, 114);
+    border: 2px;
+    border-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 47px;
+}
